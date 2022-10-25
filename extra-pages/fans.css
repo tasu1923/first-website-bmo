@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: rgb(19, 19, 19);
+}
+
+/* navbar start  */
+
+.navbar{
+    background: #080827;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    color: #3bf071;
+    float: right;
+    margin-right: 50px;
+    font-size: 25px;
+    line-height: 70px;
+    display: none;
+}
+
+
+.logo{
+    font-family: 'Nunito', sans-serif;
+    font-weight:500px;
+    text-transform: uppercase;
+    margin-left: 70px;
+    color: #CC5500;
+    float: left;
+    line-height: 70px;
+}
+
+.nvbrtools{
+    margin-right: 50px;
+    float: right;
+    line-height: 70px;
+}
+
+.nvbrtools li{
+    display: inline-block;
+}
+
+.nvbrtools > li > a{
+    color: #CC5500;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    transition: 0.5s;
+}
+
+.nvbrtools .active{
+    background-color:#3bf071 ;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nvbrtools > li > a:hover{
+    background-color:#3bf071 ;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* main part start  */
+main{
+    padding-top: 100px;
+}
+.con{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: #CC5500;
+    width: 1100px;
+    height: 100%;
+    margin: auto;
+    border: 3px solid #3bf071;
+    border-radius: 20px;
+    margin-bottom:100px;
+}
+
+
+.singleBox{
+    text-align: center;
+    background-color: #3bf071;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.singleBox > img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.singleBox h2{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.singleBox p{
+    font-size: 14px;
+    margin-bottom:10px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .checkbtn{
+        color: #3bf071;
+        float: right;
+        margin-right: 30px;
+        font-size: 25px;
+        line-height: 70px;
+        display: block;
+    }
+
+    .logo{
+        margin-left: 30px;
+    }
+    
+    .nvbrtools{
+        background-color: #080827;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        margin-right: 0;
+        padding-top: 100px;
+        transition: 0.5s all ease;
+    }
+
+    .nvbrtools li{
+        display: block;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #check:checked ~ .nvbrtools{
+        right: 0;
+    }
+
+    .con{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 100px;
+        padding: 20px;
+        background-color: #CC5500;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        border: 3px solid #3bf071;
+        border-radius: 20px;
+        margin-bottom:100px;
+    }
+
+
+}
