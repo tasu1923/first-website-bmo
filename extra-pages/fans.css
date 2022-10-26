@@ -165,6 +165,10 @@ main{
         right: 0;
     }
 
+    #check:checked ~ .checkbtn i::before {
+        content: '\f00d';
+    }
+
     .con{
         display: grid;
         grid-template-columns: repeat(1, 1fr);

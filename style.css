@@ -161,6 +161,10 @@ header{
         right: 0;
     }
 
+    #check:checked ~ .checkbtn i::before {
+        content: '\f00d';
+    }
+
     .hero-area{
         display: block;
         
